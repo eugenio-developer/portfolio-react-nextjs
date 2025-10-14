@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
             Comece a construir o seu portfólio profissional hoje! 
           </p>
           <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-           <Link href="/portfolio" className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600">
+            <Link href="/portfolio" className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600">
                 <h2 className="text-2xl font-semibold">
                 Ver Portfólio
                 </h2>
@@ -29,6 +30,7 @@ export default function Home() {
           </div>
         </main>
       </div>
+      <Footer/>
     </>
   );
 }
